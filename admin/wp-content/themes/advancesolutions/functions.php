@@ -120,6 +120,9 @@ add_action( 'widgets_init', 'advancesolutions_widgets_init' );
  * Enqueue scripts and styles.
  */
 function advancesolutions_scripts() {
+    //Google fonts enqueue: Roboto and Lato
+    wp_enqueue_style( 'advancesolutions-fonts', 'https://fonts.googleapis.com/css?family=Lato:400,700|Roboto:400,700');
+
 	wp_enqueue_style( 'advancesolutions-style', get_stylesheet_uri() );
 
 	wp_enqueue_script( 'advancesolutions-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
