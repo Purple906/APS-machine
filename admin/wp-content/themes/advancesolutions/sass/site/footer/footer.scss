@@ -26,6 +26,10 @@
                 text-decoration: none;
                 color: #ffffff;
             }
+            a:hover {
+                text-decoration: underline;
+                color: #00cd00;
+            }
         }
     }
 }
@@ -33,5 +37,19 @@
 .menu-social-media-container {
     .menu {
         width: 30%;
+    }
+}
+
+.built-by {
+    color: #ffffff;
+    margin: 1em auto;
+    text-align: center;
+    a {
+        text-decoration: none;
+        color: #ffffff;
+    }
+    a:hover {
+        text-decoration: underline;
+        color: #00cd00;
     }
 }

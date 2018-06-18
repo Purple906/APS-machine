@@ -960,8 +960,30 @@ a:hover, a:active {
 	color: #ffffff;
 }
 
+.menu-foot-nav-container .menu li a:hover,
+.menu-social-media-container .menu li a:hover {
+	text-decoration: underline;
+	color: #00cd00;
+}
+
 .menu-social-media-container .menu {
 	width: 30%;
+}
+
+.built-by {
+	color: #ffffff;
+	margin: 1em auto;
+	text-align: center;
+}
+
+.built-by a {
+	text-decoration: none;
+	color: #ffffff;
+}
+
+.built-by a:hover {
+	text-decoration: underline;
+	color: #00cd00;
 }
 
 /*--------------------------------------------------------------
