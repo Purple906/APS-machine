@@ -6,3 +6,20 @@
     width: 100%;
     height: 45vw;
 }
+
+.site-branding{
+    width: 40%;
+    margin: 0 0 0 10%;
+    .site-title{
+        font-size: 2em;
+        margin-bottom: 0;
+        a{
+            color: #ffffff;
+            text-decoration: none;
+        }
+    }
+
+    .site-description {
+        color: #ffffff;
+    }
+}

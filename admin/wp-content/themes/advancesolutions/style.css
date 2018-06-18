@@ -672,11 +672,22 @@ a:hover, a:active {
 /*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/
+.top-navigation {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-pack: justify;
+	    justify-content: space-between;
+	width: 80%;
+	margin: 1em auto 2em;
+}
+
 .main-navigation {
 	clear: both;
-	display: block;
+	/*margin-left: auto;
+    margin-right: 0;*/
 	float: left;
-	width: 100%;
+	width: 70%;
+	padding-top: 2em;
 }
 
 .main-navigation ul {
@@ -684,29 +695,38 @@ a:hover, a:active {
 	list-style: none;
 	margin: 0;
 	padding-left: 0;
-}
+	/*ul {
+			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+			float: left;
+			position: absolute;
+			top: 100%;
+			left: -999em;
+			z-index: 99999;
 
-.main-navigation ul ul {
-	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-	float: left;
-	position: absolute;
-	top: 100%;
-	left: -999em;
-	z-index: 99999;
-}
+			ul {
+				left: -999em;
+				top: 0;
+			}
 
-.main-navigation ul ul ul {
-	left: -999em;
-	top: 0;
-}
+			li {
+				&:hover > ul,
+				&.focus > ul {
+					left: 100%;
+				}
+			}
 
-.main-navigation ul ul li:hover > ul,
-.main-navigation ul ul li.focus > ul {
-	left: 100%;
-}
+			a {
+				width: 200px;
+			}
 
-.main-navigation ul ul a {
-	width: 200px;
+			:hover > a,
+			.focus > a {
+			}
+
+			a:hover,
+			a.focus {
+			}
+		}*/
 }
 
 .main-navigation ul li:hover > ul,
@@ -719,9 +739,16 @@ a:hover, a:active {
 	position: relative;
 }
 
+.main-navigation li:hover > a,
+.main-navigation li.focus > a {
+	color: #00cd00;
+}
+
 .main-navigation a {
 	display: block;
 	text-decoration: none;
+	color: #ffffff;
+	text-transform: uppercase;
 }
 
 /* Small menu. */
@@ -735,7 +762,10 @@ a:hover, a:active {
 		display: none;
 	}
 	.main-navigation ul {
-		display: block;
+		display: -ms-flexbox;
+		display: flex;
+		-ms-flex-pack: justify;
+		    justify-content: space-between;
 	}
 }
 
@@ -886,6 +916,25 @@ a:hover, a:active {
 	height: 45vw;
 }
 
+.site-branding {
+	width: 40%;
+	margin: 0 0 0 10%;
+}
+
+.site-branding .site-title {
+	font-size: 2em;
+	margin-bottom: 0;
+}
+
+.site-branding .site-title a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.site-branding .site-description {
+	color: #ffffff;
+}
+
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
@@ -931,13 +980,24 @@ a:hover, a:active {
 }
 
 .site-footer .site-info {
-	margin: 2em auto;
+	margin-top: 3.75em;
+	-ms-flex: 4 0 0px;
+	    flex: 4 0 0;
 }
 
 .site-footer .site-info hr {
+	width: 100%;
+	margin-bottom: 0;
+	background-color: #aaa9a9;
+}
+
+.footer-content {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
 	width: 80%;
-	margin-left: auto;
-	margin-right: 2em;
+	margin: 2em auto;
 }
 
 .menu-foot-nav-container .menu,
@@ -947,11 +1007,9 @@ a:hover, a:active {
 	display: flex;
 	-ms-flex-pack: justify;
 	    justify-content: space-between;
-	-ms-flex-line-pack: end;
-	    align-content: flex-end;
-	width: 60%;
+	width: 80%;
 	margin-left: auto;
-	margin-right: 2em;
+	margin-bottom: 0.5em;
 }
 
 .menu-foot-nav-container .menu li a,
@@ -967,12 +1025,13 @@ a:hover, a:active {
 }
 
 .menu-social-media-container .menu {
-	width: 30%;
+	width: 50%;
+	margin-top: 0.5em;
 }
 
 .built-by {
 	color: #ffffff;
-	margin: 1em auto;
+	margin: 4em auto 2em;
 	text-align: center;
 }
 

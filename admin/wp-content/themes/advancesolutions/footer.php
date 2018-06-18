@@ -14,11 +14,12 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer">
+        <div class="footer-content">
+        <img src="<?php echo get_template_directory_uri();?>/assets/APS_logo_sm.png">
 		<div class="site-info">
             <?php wp_nav_menu( array( 'theme_location' => 'menu-2' ) ); ?>
             <hr>
             <?php wp_nav_menu( array( 'theme_location' => 'menu-3' ) ); ?>
-            <p class="built-by">Built and designed by <a href="http://potpie.digital">Pot Pie Digital, LLC</a></p>
 			<!-- <a href="<?php echo esc_url( __( 'https://wordpress.org/', 'advancesolutions' ) ); ?>">
 				<?php
 				/* translators: %s: CMS name, i.e. WordPress. */
@@ -31,6 +32,8 @@
 				printf( esc_html__( 'Theme: %1$s by %2$s.', 'advancesolutions' ), 'advancesolutions', '<a href="http://potpie.digital/">Pot Pie Digital, LLC</a>' );
 				?> -->
 		</div><!-- .site-info -->
+        </div>
+        <p class="built-by">Built and designed by <a href="http://potpie.digital">Pot Pie Digital, LLC</a></p>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
