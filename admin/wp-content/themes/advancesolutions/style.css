@@ -875,6 +875,18 @@ a:hover, a:active {
 # Content
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
+## header
+--------------------------------------------------------------*/
+.site-header {
+	background-image: url(./assets/Hero-image.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 45vw;
+}
+
+/*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
 .sticky {
@@ -909,6 +921,47 @@ a:hover, a:active {
 
 .bypostauthor {
 	display: block;
+}
+
+/*--------------------------------------------------------------
+## footer
+--------------------------------------------------------------*/
+.site-footer {
+	background-color: #000000;
+}
+
+.site-footer .site-info {
+	margin: 2em auto;
+}
+
+.site-footer .site-info hr {
+	width: 80%;
+	margin-left: auto;
+	margin-right: 2em;
+}
+
+.menu-foot-nav-container .menu,
+.menu-social-media-container .menu {
+	list-style-type: none;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-pack: justify;
+	    justify-content: space-between;
+	-ms-flex-line-pack: end;
+	    align-content: flex-end;
+	width: 60%;
+	margin-left: auto;
+	margin-right: 2em;
+}
+
+.menu-foot-nav-container .menu li a,
+.menu-social-media-container .menu li a {
+	text-decoration: none;
+	color: #ffffff;
+}
+
+.menu-social-media-container .menu {
+	width: 30%;
 }
 
 /*--------------------------------------------------------------
