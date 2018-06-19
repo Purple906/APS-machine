@@ -19,7 +19,14 @@
 		<div class="site-info">
             <?php wp_nav_menu( array( 'theme_location' => 'menu-2' ) ); ?>
             <hr>
-            <?php wp_nav_menu( array( 'theme_location' => 'menu-3' ) ); ?>
+            <nav class="menu-social-media-container">
+                <ul id="menu-social-media" class="menu">
+                    <li><a href="https://www.facebook.com/"><img class="social-img" src="<?php echo get_template_directory_uri();?>/assets/f-logo.png"></a></li>
+                    <li><a href="https://www.linkedin.com/"><img class="social-img" src="<?php echo get_template_directory_uri();?>/assets/linked-logo.png"></a></li>
+                    <li><a href="https://www.instagram.com/"><img class="social-img" src="<?php echo get_template_directory_uri();?>/assets/IG-logo.png"></a></li>
+                </ul>
+
+            </nav>
 			<!-- <a href="<?php echo esc_url( __( 'https://wordpress.org/', 'advancesolutions' ) ); ?>">
 				<?php
 				/* translators: %s: CMS name, i.e. WordPress. */

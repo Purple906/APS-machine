@@ -1,7 +1,7 @@
 .site-footer {
     background-color: #000000;
     .site-info {
-        margin-top: 3.75em;
+        margin-top: 5.75vw;
         flex: 4 0 0;
         hr{
             width: 100%;
@@ -28,11 +28,12 @@
         list-style-type: none;
         display: flex;
         justify-content: space-between;
-        width: 80%;
+        width: 70%;
         margin-left: auto;
         margin-bottom: 0.5em;
         li {
             a{
+                font-size: 0.6em;
                 text-decoration: none;
                 color: #ffffff;
             }
@@ -45,8 +46,12 @@
 
 .menu-social-media-container {
     .menu {
-        width: 50%;
+        width: 20%;
         margin-top: 0.5em;
+        .social-img {
+            width: 2.5vw;
+            height: 2.5vw;
+        }
     }
 }
 
@@ -65,3 +70,86 @@
         color: #00cd00;
     }
 }
+
+@media  screen and (max-width: 705px) {
+    .site-footer {
+        .site-info {
+            margin-top: 3.75vw;
+        }
+    }
+    .menu-foot-nav-container{
+        .menu{
+            width: 90%;
+        }
+    }
+    .menu-social-media-container {
+        .menu {
+            width: 30%;
+            .social-img {
+                width: 3.5vw;
+                height: 3.5vw;
+        }
+        }
+    }
+}
+
+@media  screen and (max-width: 525px){
+    .footer-content{
+        display: block;
+        width: 90%;
+    }
+}
+
+@media  screen and (max-width: 375px) {
+    .menu-foot-nav-container{
+        .menu{
+            width: 98%;
+            justify-content: space-between;
+            margin: 0.5em auto;
+            padding-left: 0;
+        }
+    }
+    .menu-social-media-container {
+        .menu {
+            width: 40%;
+            .social-img {
+                width: 5.5vw;
+                height: 5.5vw;
+        }
+        }
+    }
+    .built-by {
+        width: 60%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

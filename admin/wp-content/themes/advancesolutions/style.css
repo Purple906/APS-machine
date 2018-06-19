@@ -939,6 +939,8 @@ a:hover, a:active {
 }
 
 .site-branding {
+	display: none;
+	/* need to fix this once the footer is working */
 	width: 40%;
 	padding: 0 5em 0 0;
 	margin: 0 0 0 10%;
@@ -1034,7 +1036,7 @@ a:hover, a:active {
 }
 
 .site-footer .site-info {
-	margin-top: 3.75em;
+	margin-top: 5.75vw;
 	-ms-flex: 4 0 0px;
 	    flex: 4 0 0;
 }
@@ -1065,13 +1067,14 @@ a:hover, a:active {
 	display: flex;
 	-ms-flex-pack: justify;
 	    justify-content: space-between;
-	width: 80%;
+	width: 70%;
 	margin-left: auto;
 	margin-bottom: 0.5em;
 }
 
 .menu-foot-nav-container .menu li a,
 .menu-social-media-container .menu li a {
+	font-size: 0.6em;
 	text-decoration: none;
 	color: #ffffff;
 }
@@ -1082,8 +1085,13 @@ a:hover, a:active {
 }
 
 .menu-social-media-container .menu {
-	width: 50%;
+	width: 20%;
 	margin-top: 0.5em;
+}
+
+.menu-social-media-container .menu .social-img {
+	width: 2.5vw;
+	height: 2.5vw;
 }
 
 .built-by {
@@ -1102,6 +1110,49 @@ a:hover, a:active {
 .built-by a:focus {
 	text-decoration: underline;
 	color: #00cd00;
+}
+
+@media screen and (max-width: 705px) {
+	.site-footer .site-info {
+		margin-top: 3.75vw;
+	}
+	.menu-foot-nav-container .menu {
+		width: 90%;
+	}
+	.menu-social-media-container .menu {
+		width: 30%;
+	}
+	.menu-social-media-container .menu .social-img {
+		width: 3.5vw;
+		height: 3.5vw;
+	}
+}
+
+@media screen and (max-width: 525px) {
+	.footer-content {
+		display: block;
+		width: 90%;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	.menu-foot-nav-container .menu {
+		width: 98%;
+		-ms-flex-pack: justify;
+		    justify-content: space-between;
+		margin: 0.5em auto;
+		padding-left: 0;
+	}
+	.menu-social-media-container .menu {
+		width: 40%;
+	}
+	.menu-social-media-container .menu .social-img {
+		width: 5.5vw;
+		height: 5.5vw;
+	}
+	.built-by {
+		width: 60%;
+	}
 }
 
 /*--------------------------------------------------------------
