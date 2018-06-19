@@ -36,6 +36,7 @@
             ) );
             ?>
             </nav><!-- #site-navigation -->
+
             </div>
             <div class="site-branding">
             <?php
@@ -53,6 +54,10 @@
                 ?>
                 <p class="site-description"><?php echo $advancesolutions_description; /* WPCS: xss ok. */ ?></p>
             <?php endif; ?>
+            <div class="header-btns">
+            <a class="header-btn" href="#">Our Products</a>
+            <a class="header-btn" href="#">News</a>
+            </div>
         </div><!-- .site-branding -->
         </header><!-- #masthead -->
 

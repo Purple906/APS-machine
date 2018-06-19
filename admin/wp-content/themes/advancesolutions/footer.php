@@ -33,7 +33,7 @@
 				?> -->
 		</div><!-- .site-info -->
         </div>
-        <p class="built-by">Built and designed by <a href="http://potpie.digital">Pot Pie Digital, LLC</a></p>
+        <p class="built-by">content &copy; 2018 APSMACHINE.COM. All Rights Reserved. Site built by <a href="http://potpie.digital">Pot Pie Digital, LLC</a></p>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
