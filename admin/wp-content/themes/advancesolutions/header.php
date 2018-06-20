@@ -38,6 +38,7 @@
             </nav><!-- #site-navigation -->
 
             </div>
+            <div class="header-info">
             <div class="site-branding">
             <?php
             if ( is_front_page() && is_home() ) :
@@ -59,6 +60,14 @@
             <a class="header-btn" href="#">News</a>
             </div>
         </div><!-- .site-branding -->
+        <div class="header-photos">
+            <img src="<?php echo get_template_directory_uri();?>/assets/part_1.png">
+            <img src="<?php echo get_template_directory_uri();?>/assets/part_2.png">
+            <br>
+            <img src="<?php echo get_template_directory_uri();?>/assets/part_2.png">
+            <img src="<?php echo get_template_directory_uri();?>/assets/part_4.png">
+        </div>
+        </div>
         </header><!-- #masthead -->
 
 

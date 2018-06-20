@@ -678,7 +678,7 @@ a:hover, a:active {
 	-ms-flex-pack: justify;
 	    justify-content: space-between;
 	width: 80%;
-	margin: 1em auto 2em;
+	margin: 1em auto 0;
 }
 
 .top-navigation .custom-logo-link {
@@ -687,6 +687,12 @@ a:hover, a:active {
 
 .top-navigation .custom-logo-link img {
 	width: 20vw;
+}
+
+@media screen and (max-width: 525px) {
+	.top-navigation {
+		width: 90%;
+	}
 }
 
 .main-navigation {
@@ -760,6 +766,12 @@ a:hover, a:active {
 	text-decoration: none;
 	color: #ffffff;
 	text-transform: uppercase;
+}
+
+@media screen and (max-width: 890px) {
+	.main-navigation {
+		padding-top: 0;
+	}
 }
 
 /* Small menu. */
@@ -938,28 +950,63 @@ a:hover, a:active {
 	height: 50vw;
 }
 
-.site-branding {
-	display: none;
-	/* need to fix this once the footer is working */
-	width: 40%;
-	padding: 0 5em 0 0;
-	margin: 0 0 0 10%;
-	/*@media screen and (max-width: 990px){
-        width: 80%;
-    }*/
+.header-info {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-pack: justify;
+	    justify-content: space-between;
+	width: 80%;
+	margin: 1em auto;
+	-ms-flex-align: center;
+	    align-items: center;
 }
 
-.site-branding .site-title {
-	margin-bottom: 0;
+.header-info .site-branding {
+	/*   padding: 0 5em 0 0;
+        margin: 0 0 0 10%;*/
 }
 
-.site-branding .site-title a {
-	font-size: 2em;
+.header-info .site-branding .site-title {
+	margin: 0;
+}
+
+.header-info .site-branding .site-title a {
+	font-size: 3vw;
 	color: #ffffff;
 	text-decoration: none;
 }
 
-.site-branding .header-btns {
+@media screen and (max-width: 605px) {
+	.header-info .site-branding .site-title a {
+		font-size: 4.5vw;
+	}
+}
+
+@media screen and (max-width: 605px) and (max-width: 460px) {
+	.header-info .site-branding .site-title a {
+		font-size: 5vw;
+	}
+}
+
+.header-info .site-description {
+	color: #ffffff;
+	font-size: 1.5vw;
+	text-transform: uppercase;
+}
+
+@media screen and (max-width: 605px) {
+	.header-info .site-description {
+		font-size: 1.5vw;
+	}
+}
+
+@media screen and (max-width: 460px) {
+	.header-info .site-description {
+		font-size: 2vw;
+	}
+}
+
+.header-info .header-btns {
 	display: -ms-flexbox;
 	display: flex;
 	-ms-flex-pack: distribute;
@@ -967,27 +1014,54 @@ a:hover, a:active {
 	margin: 2em auto 0;
 }
 
-.site-branding .header-btns .header-btn {
+.header-info .header-btns .header-btn {
 	color: #ffffff;
-	font-size: 0.9em;
+	font-size: 1.5vw;
 	text-decoration: none;
 	padding: 0.5em 1em;
 	background-color: #000000;
 }
 
-.site-branding .header-btns .header-btn:hover {
+@media screen and (max-width: 460px) {
+	.header-info .header-btns .header-btn {
+		font-size: 2vw;
+	}
+}
+
+.header-info .header-btns .header-btn:hover {
 	background-color: #00cd00;
 }
 
-.site-branding .site-description {
-	color: #ffffff;
-	font-size: 0.8em;
-	text-transform: uppercase;
+@media screen and (max-width: 590px) {
+	.header-info .header-btns {
+		margin: 0;
+	}
 }
 
-@media screen and (max-width: 1170px) {
-	.site-branding {
-		width: 50%;
+.header-info .header-photos {
+	width: 100%;
+	text-align: center;
+}
+
+.header-info .header-photos img {
+	width: 14vw;
+}
+
+@media screen and (max-width: 460px) {
+	.header-info .header-photos {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 525px) {
+	.header-info {
+		width: 90%;
+	}
+}
+
+@media screen and (max-width: 460px) {
+	.header-info {
+		margin-top: 0;
 	}
 }
 

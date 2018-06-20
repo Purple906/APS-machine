@@ -2,13 +2,16 @@
     display: flex;
     justify-content: space-between;
     width: 80%;
-    margin: 1em auto 2em;
+    margin: 1em auto 0;
 
     .custom-logo-link {
         padding-right: 2em;
         img{
             width: 20vw;
         }
+    }
+    @media screen and (max-width: 525px){
+        width: 90%;
     }
 }
 
@@ -89,6 +92,10 @@
 	.current_page_ancestor > a,
 	.current-menu-ancestor > a {
 	}
+
+    @media screen and (max-width: 890px){
+        padding-top: 0;
+    }
 }
 
 /* Small menu. */

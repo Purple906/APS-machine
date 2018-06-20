@@ -7,20 +7,44 @@
     height: 50vw;
 }
 
-.site-branding{
-    display: none; /* need to fix this once the footer is working */
-    width: 40%;
-    padding: 0 5em 0 0;
-    margin: 0 0 0 10%;
-    .site-title{
-        margin-bottom: 0;
-        a{
-            font-size: 2em;
-            color: #ffffff;
-            text-decoration: none;
+.header-info {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 1em auto;
+    align-items: center;
+
+    .site-branding {
+     /*   padding: 0 5em 0 0;
+        margin: 0 0 0 10%;*/
+        .site-title {
+            margin: 0;
+            a{
+                font-size: 3vw;
+                color: #ffffff;
+                text-decoration: none;
+                @media screen and (max-width: 605px){
+                    font-size: 4.5vw;
+                @media screen and (max-width: 460px){
+                    font-size: 5vw;
+                }
+                }
+            }
         }
     }
 
+    .site-description {
+        color: #ffffff;
+        font-size: 1.5vw;
+        text-transform: uppercase;
+
+        @media screen and (max-width: 605px){
+            font-size: 1.5vw;
+        }
+        @media screen and (max-width: 460px){
+            font-size: 2vw;
+        }
+    }
     .header-btns {
         display: flex;
         justify-content: space-around;
@@ -28,26 +52,37 @@
 
         .header-btn {
             color: #ffffff;
-            font-size: 0.9em;
+            font-size: 1.5vw;
             text-decoration: none;
             padding: 0.5em 1em;
             background-color: #000000;
+            @media screen and (max-width: 460px){
+                    font-size: 2vw;
+            }
         }
         .header-btn:hover {
             background-color: #00cd00;
         }
+
+        @media screen and (max-width: 590px){
+            margin: 0;
+        }
     }
 
-    .site-description {
-        color: #ffffff;
-        font-size: 0.8em;
-        text-transform: uppercase;
+    .header-photos {
+        width: 100%;
+        text-align: center;
+        img {
+            width: 14vw;
+        }
+        @media screen and (max-width: 460px){
+            display: none;
+        }
     }
-
-    @media screen and (max-width: 1170px){
-        width: 50%;
+    @media screen and (max-width: 525px){
+        width: 90%;
     }
-    /*@media screen and (max-width: 990px){
-        width: 80%;
-    }*/
+    @media screen and (max-width: 460px){
+            margin-top: 0;
+        }
 }
