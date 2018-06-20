@@ -63,7 +63,6 @@
         <div class="header-photos">
             <img src="<?php echo get_template_directory_uri();?>/assets/part_1.png">
             <img src="<?php echo get_template_directory_uri();?>/assets/part_2.png">
-            <br>
             <img src="<?php echo get_template_directory_uri();?>/assets/part_2.png">
             <img src="<?php echo get_template_directory_uri();?>/assets/part_4.png">
         </div>
