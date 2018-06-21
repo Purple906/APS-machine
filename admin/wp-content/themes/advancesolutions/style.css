@@ -1103,11 +1103,29 @@ a:hover, a:active {
 	border-bottom: 1px solid #00cd00;
 }
 
+.full-bleed {
+	margin-left: -1.5em;
+	margin-right: -1.5em;
+}
+
 .description {
 	width: 80%;
 	margin: 2em auto;
 	text-align: center;
 	font-size: 0.8em;
+}
+
+.indust-section {
+	background-image: url(./assets/aps_industries.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: auto;
+}
+
+.indust-section h3 {
+	padding-top: 1em;
 }
 
 .industries-served {
@@ -1116,6 +1134,7 @@ a:hover, a:active {
 	-ms-flex-pack: justify;
 	    justify-content: space-between;
 	width: 80%;
+	padding-bottom: 1em;
 	margin: 2em auto;
 }
 
@@ -1131,6 +1150,32 @@ a:hover, a:active {
 
 .industry p {
 	font-size: 0.8em;
+}
+
+.pt-cv-ifield {
+	border: solid 1px black;
+	box-shadow: 1px 2px 4px #000000;
+	/*width: 80%;*/
+}
+
+.pt-cv-wrapper img {
+	margin: 0 1%;
+	padding-top: 0.5em;
+	width: 98%;
+}
+
+.pt-cv-content,
+.pt-cv-title {
+	padding: 0 0.5em;
+}
+
+.pt-cv-content {
+	font-size: 0.8em;
+}
+
+.pt-cv-view {
+	margin: 0 auto;
+	width: 90%;
 }
 
 /*--------------------------------------------------------------
