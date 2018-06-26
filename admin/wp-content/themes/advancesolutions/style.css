@@ -1305,6 +1305,15 @@ a:hover, a:active {
 	font-size: 0.8em;
 }
 
+@media screen and (max-width: 880px) {
+	.about-us .about-us-content {
+		display: block;
+	}
+	.about-us .about-us-content .about-us-info {
+		width: 100%;
+	}
+}
+
 .about-us-services {
 	display: -ms-flexbox;
 	display: flex;
@@ -1321,6 +1330,18 @@ a:hover, a:active {
 .about-us-services div p {
 	margin: 0;
 	font-size: 0.8em;
+}
+
+@media screen and (max-width: 880px) {
+	.about-us-services {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 530px) {
+	.about-us-services {
+		display: block;
+	}
 }
 
 .service {
@@ -1346,6 +1367,16 @@ a:hover, a:active {
 	padding-left: 0.5em;
 }
 
+@media screen and (max-width: 530px) {
+	.service {
+		width: 100%;
+		margin: 5vw auto;
+	}
+	.service .words {
+		padding-right: 5vw;
+	}
+}
+
 .team {
 	background-color: #ebebeb;
 }
@@ -1362,6 +1393,12 @@ a:hover, a:active {
 
 .contact-us h3 {
 	margin-bottom: 2vw;
+}
+
+@media screen and (max-width: 520px) {
+	.contact-us {
+		width: 90%;
+	}
 }
 
 .contact-info {
@@ -1408,7 +1445,7 @@ a:hover, a:active {
 .cta-3 {
 	display: -ms-flexbox;
 	display: flex;
-	margin-bottom: 3vw;
+	margin-bottom: 5vw;
 }
 
 .cta-1 img,
@@ -1435,8 +1472,8 @@ a:hover, a:active {
 	.cta-1 img,
 	.cta-2 img,
 	.cta-3 img {
-		width: 8vw;
-		height: 8vw;
+		width: 12vw;
+		height: 12vw;
 		text-align: center;
 		margin: 0 auto;
 	}
@@ -1448,15 +1485,33 @@ a:hover, a:active {
 	}
 }
 
+@media screen and (max-width: 520px) {
+	.cta-1 {
+		width: 33%;
+	}
+}
+
 @media screen and (max-width: 813px) {
 	.cta-2 {
 		width: 30%;
 	}
 }
 
+@media screen and (max-width: 520px) {
+	.cta-2 {
+		width: 33%;
+	}
+}
+
 @media screen and (max-width: 813px) {
 	.cta-3 {
 		width: 30%;
+	}
+}
+
+@media screen and (max-width: 520px) {
+	.cta-3 {
+		width: 33%;
 	}
 }
 
@@ -1514,7 +1569,7 @@ a:hover, a:active {
 @media screen and (max-width: 813px) {
 	.map {
 		width: 100%;
-		height: 20vw;
+		height: 60vw;
 		margin: 2vw 0 0 0;
 	}
 }

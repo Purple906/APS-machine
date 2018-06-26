@@ -150,14 +150,20 @@
     width: 90%;
     margin: 4em auto 0;
     padding: 4em 0;
-    .about-us-info {
-        width: 40%;
-        padding-right: 1em;
-        h3 {
-            margin: 0;
+        .about-us-info {
+            width: 40%;
+            padding-right: 1em;
+            h3 {
+                margin: 0;
+            }
+            p {
+                font-size: 0.8em;
+            }
         }
-        p {
-            font-size: 0.8em;
+    @media screen and (max-width: 880px) {
+        display: block;
+        .about-us-info {
+            width: 100%;
         }
     }
     }
@@ -177,6 +183,12 @@
             font-size: 0.8em;
         }
     }
+    @media screen and (max-width: 880px) {
+        width: 100%;
+    }
+    @media screen and (max-width: 530px) {
+        display: block;
+    }
 }
 
 .service{
@@ -193,6 +205,13 @@
     }
     .words {
         padding-left: 0.5em;
+    }
+    @media screen and (max-width: 530px) {
+        width: 100%;
+        margin: 5vw auto;
+        .words{
+            padding-right: 5vw;
+        }
     }
 }
 
@@ -215,6 +234,9 @@
         margin-bottom: 2vw;
         // grid-column: 1/3;
         // grid-row:1; 
+    }
+    @media screen and (max-width: 520px){
+        width: 90%;
     }
 }
 
@@ -247,7 +269,7 @@
 .cta-2,
 .cta-3 {
     display: flex;
-    margin-bottom: 3vw;
+    margin-bottom: 5vw;
     img {
         margin-right: 1em; 
         width: 20%;
@@ -259,8 +281,8 @@
             margin-right: 0;
         }
         @media screen and (max-width: 520px){
-            width: 8vw;
-            height: 8vw;
+            width: 12vw;
+            height: 12vw;
             text-align: center;
             margin: 0 auto;
         }
@@ -271,15 +293,24 @@
     @media screen and (max-width: 813px){
         width: 40%;
     }
+    @media screen and (max-width: 520px){
+        width: 33%;
+    }
 }
 .cta-2 {
     @media screen and (max-width: 813px){
         width: 30%;
     }
+    @media screen and (max-width: 520px){
+        width: 33%;
+    }
 }
 .cta-3 {
     @media screen and (max-width: 813px){
         width: 30%;
+    }
+    @media screen and (max-width: 520px){
+        width: 33%;
     }
 }
 
@@ -334,7 +365,7 @@
     width: 40vw;
     @media screen and (max-width: 813px){
         width: 100%;
-        height: 20vw;
+        height: 60vw;
         margin: 2vw 0 0 0;
     }
 }
