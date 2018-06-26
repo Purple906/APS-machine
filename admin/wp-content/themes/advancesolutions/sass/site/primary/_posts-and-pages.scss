@@ -65,6 +65,12 @@
     width: 80%;
     padding-bottom: 1em;
     margin: 2em auto;
+    @media screen and (max-width: 870px) {
+        flex-wrap: wrap;
+    }
+    @media screen and (max-width: 470px) {
+        display: block;
+    }
 }
 
 .industry {
@@ -76,6 +82,14 @@
     }
     p {
         font-size: 0.8em;
+    }
+    @media screen and (max-width: 870px) {
+        width: 44%;
+        margin: 0 2%;
+    }
+    @media screen and (max-width: 470px) {
+        width: 100%;
+        margin: 2% auto;
     }
 }
 

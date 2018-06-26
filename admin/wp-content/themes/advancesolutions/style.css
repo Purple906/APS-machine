@@ -1188,6 +1188,19 @@ a:hover, a:active {
 	margin: 2em auto;
 }
 
+@media screen and (max-width: 870px) {
+	.industries-served {
+		-ms-flex-wrap: wrap;
+		    flex-wrap: wrap;
+	}
+}
+
+@media screen and (max-width: 470px) {
+	.industries-served {
+		display: block;
+	}
+}
+
 .industry {
 	width: 22%;
 	text-align: center;
@@ -1200,6 +1213,20 @@ a:hover, a:active {
 
 .industry p {
 	font-size: 0.8em;
+}
+
+@media screen and (max-width: 870px) {
+	.industry {
+		width: 44%;
+		margin: 0 2%;
+	}
+}
+
+@media screen and (max-width: 470px) {
+	.industry {
+		width: 100%;
+		margin: 2% auto;
+	}
 }
 
 .pt-cv-ifield {
