@@ -28,7 +28,7 @@
             <div class="top-navigation">
             <?php the_custom_logo(); ?>
             <nav id="site-navigation" class="main-navigation">
-            <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'advancesolutions' ); ?></button>
+            <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Menu', 'advancesolutions' ); ?></button>
             <?php
             wp_nav_menu( array(
                 'theme_location' => 'menu-1',
@@ -36,7 +36,7 @@
             ) );
             ?>
             </nav><!-- #site-navigation -->
-
+            
             </div>
             <div class="header-info">
             <div class="site-branding">

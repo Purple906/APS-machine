@@ -779,6 +779,54 @@ a:hover, a:active {
 .main-navigation.toggled ul {
 	display: block;
 	float: right;
+	margin-top: 3vw;
+}
+
+.main-navigation.toggled ul {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-direction: column;
+	    flex-direction: column;
+	-ms-flex-align: end;
+	    align-items: flex-end;
+	background-color: #ebebeb;
+	width: auto;
+	margin-right: 0.15em;
+	box-shadow: 1px 2px 4px #000000;
+	position: absolute;
+	top: 8%;
+	left: 72vw;
+	z-index: 99999;
+}
+
+.main-navigation.toggled ul li {
+	padding-right: 1em;
+}
+
+.main-navigation.toggled ul li a {
+	color: #000000;
+}
+
+.main-navigation.toggled ul .menu-item-1783 a {
+	padding-right: 0;
+}
+
+@media screen and (max-width: 750px) {
+	.main-navigation.toggled ul {
+		left: 70vw;
+	}
+}
+
+@media screen and (max-width: 573px) {
+	.main-navigation.toggled ul {
+		left: 65vw;
+	}
+}
+
+@media screen and (max-width: 377px) {
+	.main-navigation.toggled ul li a {
+		font-size: 0.6em;
+	}
 }
 
 .menu-item-1783 {
@@ -948,6 +996,7 @@ a:hover, a:active {
 	background-size: cover;
 	width: 100%;
 	height: auto;
+	overflow: hidden;
 }
 
 .header-info {
