@@ -134,7 +134,7 @@
     justify-content: space-between;
     align-items: center;
     width: 90%;
-    margin: 4em auto 2em;
+    margin: 4em auto 0;
     padding: 4em 0;
     .about-us-info {
         width: 40%;
@@ -182,4 +182,66 @@
     }
 }
 
+.team {
+    background-color: #ebebeb;
 
+    h3 {
+        margin-top: 0;
+        padding-top: 2em;
+    }
+}
+
+.contact-us {
+    width: 80%;
+    margin: 0 auto;
+    h3 {
+        margin-bottom: 2vw;
+    }
+}
+
+.contact-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    p {
+        margin: 0;
+    }
+}
+
+.ctas {
+    width: 40%;
+    // padding-right: 3em;
+}
+
+.cta {
+    display: flex;
+    margin-bottom: 3vw;
+    img {
+        margin-right: 1em; 
+        width: 20%;
+        height: 20%;
+    }
+}
+
+.cta-words {
+    h6 {
+        margin: 0;
+        font-size: 0.9em;
+    }
+    p{
+        margin: 0;
+        font-size: 0.7em;
+    }
+
+}
+
+.wpcf7-form {
+    p {
+        margin: 0;
+        padding-bottom: 0.5em;
+    }
+}
+
+.map { 
+    margin: 0 0 0 1em ;
+}

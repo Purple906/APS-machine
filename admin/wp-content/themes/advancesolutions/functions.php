@@ -1,4 +1,7 @@
 <?php
+
+include 'inc/posttypes.php';
+
 /**
  * Advancesolutions functions and definitions
  *

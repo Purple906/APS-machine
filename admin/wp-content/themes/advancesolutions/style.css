@@ -1212,7 +1212,7 @@ a:hover, a:active {
 	-ms-flex-align: center;
 	    align-items: center;
 	width: 90%;
-	margin: 4em auto 2em;
+	margin: 4em auto 0;
 	padding: 4em 0;
 }
 
@@ -1268,6 +1268,72 @@ a:hover, a:active {
 
 .service .words {
 	padding-left: 0.5em;
+}
+
+.team {
+	background-color: #ebebeb;
+}
+
+.team h3 {
+	margin-top: 0;
+	padding-top: 2em;
+}
+
+.contact-us {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.contact-us h3 {
+	margin-bottom: 2vw;
+}
+
+.contact-info {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-pack: justify;
+	    justify-content: space-between;
+	-ms-flex-align: start;
+	    align-items: flex-start;
+}
+
+.contact-info p {
+	margin: 0;
+}
+
+.ctas {
+	width: 40%;
+}
+
+.cta {
+	display: -ms-flexbox;
+	display: flex;
+	margin-bottom: 3vw;
+}
+
+.cta img {
+	margin-right: 1em;
+	width: 20%;
+	height: 20%;
+}
+
+.cta-words h6 {
+	margin: 0;
+	font-size: 0.9em;
+}
+
+.cta-words p {
+	margin: 0;
+	font-size: 0.7em;
+}
+
+.wpcf7-form p {
+	margin: 0;
+	padding-bottom: 0.5em;
+}
+
+.map {
+	margin: 0 0 0 1em;
 }
 
 /*--------------------------------------------------------------
