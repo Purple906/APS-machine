@@ -1,0 +1,40 @@
+// html, body {
+//     position: relative;
+//     height: 100%;
+//   }
+// body {
+// /*background: #000;*/
+// font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+// font-size: 14px;
+// color:#fff;
+// margin: 0;
+// padding: 0;
+// }
+
+.swiper-container {
+  width: 80%;
+}
+
+.swiper-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.swiper-slide {
+  overflow: hidden;
+}
+
+.swiper-slide img {
+width: 70%;
+height: auto;
+max-height: 250px;
+/* border: 1px solid black; */
+filter: grayscale(100%);
+transition: 1s;
+}
+
+.swiper-slide img:hover {
+  filter: grayscale(0);
+  transform: scale(1.1);
+}
