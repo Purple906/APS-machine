@@ -18,8 +18,15 @@
     width: 100%;
   }
 }
-.swiper-button-prev, .swiper-button-next {
-  top: 50%;
+// .swiper-button-prev, .swiper-button-next {
+//   top: 50%;
+// }
+
+.swiper-button-prev {
+  background-image: url(./assets/swiper_btn_prev.png)
+}
+.swiper-button-next {
+  background-image: url(./assets/swiper_btn_nxt.png)
 }
 .swiper-wrapper {
   display: flex;
