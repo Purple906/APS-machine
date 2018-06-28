@@ -14,12 +14,16 @@
 .swiper-container {
   width: 80%;
   display: flex;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
 }
 .swiper-button-prev, .swiper-button-next {
   top: 50%;
 }
 .swiper-wrapper {
   display: flex;
+  margin: 0 2em;
   align-items: center;
   justify-content: space-between;
 }
@@ -40,4 +44,8 @@ transition: 1s;
 .swiper-slide img:hover {
   filter: grayscale(0);
   transform: scale(1.1);
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #00cd00;
 }

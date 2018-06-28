@@ -1774,6 +1774,12 @@ html.lb-disable-scrolling {
 	display: flex;
 }
 
+@media screen and (max-width: 768px) {
+	.swiper-container {
+		width: 100%;
+	}
+}
+
 .swiper-button-prev, .swiper-button-next {
 	top: 50%;
 }
@@ -1781,6 +1787,7 @@ html.lb-disable-scrolling {
 .swiper-wrapper {
 	display: -ms-flexbox;
 	display: flex;
+	margin: 0 2em;
 	-ms-flex-align: center;
 	    align-items: center;
 	-ms-flex-pack: justify;
@@ -1805,6 +1812,10 @@ html.lb-disable-scrolling {
 	-webkit-filter: grayscale(0);
 	        filter: grayscale(0);
 	transform: scale(1.1);
+}
+
+.swiper-pagination-bullet-active {
+	background-color: #00cd00;
 }
 
 /*--------------------------------------------------------------
