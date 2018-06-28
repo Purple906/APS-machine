@@ -272,8 +272,8 @@
     margin-bottom: 5vw;
     img {
         margin-right: 1em; 
-        width: 20%;
-        height: 20%;
+        width: 5vw;
+        height: 5vw;
         @media screen and (max-width: 813px){
             justify-content: space-around;
             width: 5vw;
@@ -289,25 +289,11 @@
     }
 }
 
-.cta-1{
+.cta-1,
+.cta-2,
+.cta-3{
     @media screen and (max-width: 813px){
         width: 40%;
-    }
-    @media screen and (max-width: 520px){
-        width: 33%;
-    }
-}
-.cta-2 {
-    @media screen and (max-width: 813px){
-        width: 30%;
-    }
-    @media screen and (max-width: 520px){
-        width: 33%;
-    }
-}
-.cta-3 {
-    @media screen and (max-width: 813px){
-        width: 30%;
     }
     @media screen and (max-width: 520px){
         width: 33%;
