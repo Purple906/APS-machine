@@ -11,10 +11,10 @@ var mySwiper = new Swiper ('.swiper-container', {
     loop: true,
     slidesPerView: 3,
     centeredSlides: true,
-    autoplay: {
-      delay: 2500,
-      disableOnInteraction: false,
-    },
+    // autoplay: {
+    //   delay: 2500,
+    //   disableOnInteraction: false,
+    // },
     speed: 600,
         parallax: true,
     spaceBetween: 30,

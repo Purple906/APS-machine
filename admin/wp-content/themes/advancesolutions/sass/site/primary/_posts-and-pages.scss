@@ -254,7 +254,7 @@
 
 .ctas {
     width: 40%;
-    padding-right: 3em;
+    padding-right: 1em;
     @media screen and (max-width: 943px){
         padding-right: 1em;
     }
@@ -287,13 +287,24 @@
             margin: 0 auto;
         }
     }
+    @media screen and (max-width: 520px){
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
-.cta-1,
-.cta-2,
-.cta-3{
+.cta-1{
     @media screen and (max-width: 813px){
         width: 40%;
+    }
+    @media screen and (max-width: 520px){
+        width: 33%;
+    }
+}
+.cta-2,
+.cta-3 {
+    @media screen and (max-width: 813px){
+        width: 30%;
     }
     @media screen and (max-width: 520px){
         width: 33%;
@@ -343,10 +354,23 @@
     }
 }
 
+button, input[type="button"], 
+input[type="reset"], 
+input[type="submit"] {
+    background-color: #000000;
+    border: none;
+    color: #ffffff;
+}
+button, input[type="button"], 
+input[type="reset"], 
+input[type="submit"]:hover {
+    background-color: #00cd00;
+    border: none;
+}
 .map { 
     // grid-column: 3;
     // grid-row: 1/5;
-    margin: 0 0 0 1em ;
+    margin: 0 0 0 2em ;
     height: 22vw;
     width: 40vw;
     @media screen and (max-width: 813px){
