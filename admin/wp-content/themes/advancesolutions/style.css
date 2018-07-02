@@ -1150,7 +1150,6 @@ strong {
 }
 
 .entry-content h3 {
-	margin-bottom: 0;
 	text-transform: uppercase;
 }
 
@@ -1528,6 +1527,11 @@ strong {
 	font-size: 0.7em;
 }
 
+.cta-words p a {
+	text-decoration: none;
+	color: #000000;
+}
+
 @media screen and (max-width: 520px) {
 	.cta-words {
 		display: none;
@@ -1604,6 +1608,12 @@ input[type="submit"]:hover {
 	padding-bottom: 5vw;
 }
 
+@media screen and (max-width: 765px) {
+	.staff {
+		display: block;
+	}
+}
+
 .staff-member {
 	background-color: #ffffff;
 	width: 30%;
@@ -1621,6 +1631,7 @@ input[type="submit"]:hover {
 .staff-member p a {
 	text-decoration: none;
 	color: #979797;
+	font-size: 0.8em;
 }
 
 .staff-member p a:hover {
@@ -1635,8 +1646,22 @@ input[type="submit"]:hover {
 	height: 12vw;
 }
 
+@media screen and (max-width: 500px) {
+	.staff-member img {
+		width: 20vw;
+		height: 20vw;
+	}
+}
+
 .staff-member h6 {
 	margin: 0;
+}
+
+@media screen and (max-width: 765px) {
+	.staff-member {
+		width: 100%;
+		margin: 1vw;
+	}
 }
 
 /*--------------------------------------------------------------
