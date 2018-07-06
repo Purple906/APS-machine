@@ -17,6 +17,24 @@ get_header();
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
+		<?php 
+			$images = get_field('parts_gallary');
+			$size = 'large'; // (thumbnail, medium, large, full or custom size)
+
+		if( $images ): ?>
+		<div class="swiper-container">
+    			<ul class="swiper-wrapper">
+        			<?php foreach( $images as $image ): ?>
+            	<li class="swiper-slide">
+            		<?php echo wp_get_attachment_image( $image['ID'], $size ); ?>
+            	</li>
+        	<?php endforeach; ?>
+    			</ul>
+			<?php endif; ?>
+			<div class="swiper-pagination"></div>
+			<div class="swiper-button-prev"></div>
+			<div class="swiper-button-next"></div>
+		</div>
 		<?php
 		while ( have_posts() ) :
 			the_post();
