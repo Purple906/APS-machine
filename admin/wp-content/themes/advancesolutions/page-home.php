@@ -26,7 +26,9 @@ get_header();
     			<ul class="swiper-wrapper">
         			<?php foreach( $images as $image ): ?>
             	<li class="swiper-slide">
+				<a href="<?php echo $image['url']; ?>" data-lightbox="parts" data-title="<?php echo $image['caption']; ?>" >
             		<?php echo wp_get_attachment_image( $image['ID'], $size ); ?>
+				</a>
             	</li>
         	<?php endforeach; ?>
     			</ul>
