@@ -40,7 +40,7 @@ strong {
     margin-right: -1.5em;
 }
 
-.description {
+.products {
     width: 80%;
     margin: 2em auto;
     text-align: center;
@@ -123,6 +123,7 @@ strong {
 .pt-cv-content {
     font-size: 0.8em;
     color: #979797;
+    padding-bottom: 3em;
 }
 
 .pt-cv-view {
@@ -206,6 +207,7 @@ strong {
     }
     .words {
         padding-left: 0.5em;
+        width: 80%;
     }
     @media screen and (max-width: 530px) {
         width: 100%;

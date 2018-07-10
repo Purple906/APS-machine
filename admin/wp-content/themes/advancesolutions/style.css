@@ -1158,7 +1158,7 @@ strong {
 	margin-right: -1.5em;
 }
 
-.description {
+.products {
 	width: 80%;
 	margin: 2em auto;
 	text-align: center;
@@ -1258,6 +1258,7 @@ strong {
 .pt-cv-content {
 	font-size: 0.8em;
 	color: #979797;
+	padding-bottom: 3em;
 }
 
 .pt-cv-view {
@@ -1366,6 +1367,7 @@ strong {
 
 .service .words {
 	padding-left: 0.5em;
+	width: 80%;
 }
 
 @media screen and (max-width: 530px) {
@@ -1948,7 +1950,8 @@ html.lb-disable-scrolling {
 
 .site-footer .site-info hr {
 	width: 100%;
-	margin-bottom: 0;
+	margin-bottom: 12px;
+	margin-top: 11px;
 	background-color: #aaa9a9;
 }
 

@@ -17,8 +17,12 @@ get_header();
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
+		<div class="products">
+		<h3 style="text-align: center;"><strong>Our</strong> Products</h3>
+		<p><?php the_field('our_products'); ?></p>
+		</div>
 		<?php 
-			$images = get_field('parts_gallary');
+			$images = get_field('parts_gallery');
 			$size = 'large'; // (thumbnail, medium, large, full or custom size)
 
 		if( $images ): ?>
@@ -37,6 +41,7 @@ get_header();
 			<div class="swiper-button-prev"></div>
 			<div class="swiper-button-next"></div>
 		</div>
+		
 		<?php
 		while ( have_posts() ) :
 			the_post();
