@@ -1165,6 +1165,11 @@ strong {
 	font-size: 0.8em;
 }
 
+.products h3 {
+	padding: 1em 0;
+	text-transform: uppercase;
+}
+
 .indust-section {
 	background-image: url(./assets/aps_industries.jpg);
 	background-position: center;
