@@ -1158,16 +1158,22 @@ strong {
 	margin-right: -1.5em;
 }
 
-.products {
+.products,
+.services {
 	width: 80%;
 	margin: 2em auto;
 	text-align: center;
-	font-size: 0.8em;
 }
 
-.products h3 {
-	padding: 1em 0;
+.products h3,
+.services h3 {
+	padding: 0;
+	margin-bottom: 0;
 	text-transform: uppercase;
+}
+
+.services {
+	margin-top: 6vw;
 }
 
 .indust-section {

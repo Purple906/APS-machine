@@ -41,8 +41,37 @@ get_header();
 			<div class="swiper-button-prev"></div>
 			<div class="swiper-button-next"></div>
 		</div>
-		
+		<div class="services">
+		<h3 style="text-align: center;"><strong>Ser</strong>vices</h3>
+		<p><?php the_field('services_description'); ?></p>
+		</div>
+		<div>
+			<h3><?php the_field('machine_title'); ?></h3>
+			<p><?php the_field('machine_description'); ?></p>
+			<?php 
+				$link = get_field('machine_link');
+				if( $link ): ?>
+					<a class="button" href="<?php echo $link; ?>">Continue Reading</a><?php endif; ?>
+		</div>
+		<div>
+			<h3><?php the_field('assembly_title'); ?></h3>
+			<p><?php the_field('assembly_description'); ?></p>
+			<?php 
+				$link = get_field('assembly_link');
+				if( $link ): ?>
+					<a class="button" href="<?php echo $link; ?>">Continue Reading</a><?php endif; ?>
+		</div>
+		<div>
+			<h3><?php the_field('3d_printing_title'); ?></h3>
+			<p><?php the_field('3d_printing_description'); ?></p>
+			<?php 
+				$link = get_field('3d_printing_link');
+				if( $link ): ?>
+					<a class="button" href="<?php echo $link; ?>">Continue Reading</a><?php endif; ?>
+		</div>
+
 		<?php
+		
 		while ( have_posts() ) :
 			the_post();
 
