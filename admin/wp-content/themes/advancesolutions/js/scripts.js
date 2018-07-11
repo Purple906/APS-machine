@@ -3,7 +3,7 @@ lightbox.option({
     'wrapAround': true,
     'albumLabel': 'APS Machine Parts',
     'alwaysShowNavOnTouchDevices': true
-})
+});
 
 var mySwiper = new Swiper ('.swiper-container', {
     // Optional parameters
@@ -46,4 +46,21 @@ var mySwiper = new Swiper ('.swiper-container', {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
-  })
+  });
+
+  // js for services carousel
+  var menu = ['Machine', 'Assembly', '3D Printing'];
+    var service = new Swiper('.service-swiper', {
+      pagination: {
+        el: '.service-pagination',
+        clickable: true,
+        renderBullet: function (index, className) {
+          return '<span class="' + className + '">' + (menu[index]) + '</span>';
+        },
+      },
+      // Navigation arrows
+    // navigation: {
+    //   nextEl: '.swiper-button-next',
+    //   prevEl: '.swiper-button-prev',
+    // },
+    });
