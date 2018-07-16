@@ -115,11 +115,23 @@ transition: 1s;
     color:#fff;
     opacity: 1;
     background:#000;
+    text-transform: uppercase;
   }
-}
-.service-pagination{ 
   .swiper-pagination-bullet-active {
     color:#fff;
     background: #02ca12;
+    position: relative;
+  }
+  .swiper-pagination-bullet-active::after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -100%;
+    margin-left: -24px;
+    background-image: url('./assets/active-arrow.png');
+    background-repeat: no-repeat;
+    width: 3em;
+    height: 3em;
   }
 }
+

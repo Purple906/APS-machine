@@ -55,17 +55,17 @@
                 ?>
                 <p class="site-description"><?php echo $advancesolutions_description; /* WPCS: xss ok. */ ?></p>
             <?php endif; ?>
-            <div class="header-btns">
+            <!-- <div class="header-btns">
             <a class="header-btn" href="#">Our Products</a>
             <a class="header-btn" href="#">News</a>
-            </div>
+            </div> -->
         </div><!-- .site-branding -->
-        <div class="header-photos">
+        <!-- <div class="header-photos">
             <img src="<?php echo get_template_directory_uri();?>/assets/part_1.png">
             <img src="<?php echo get_template_directory_uri();?>/assets/part_2.png">
             <img src="<?php echo get_template_directory_uri();?>/assets/part_2.png">
             <img src="<?php echo get_template_directory_uri();?>/assets/part_4.png">
-        </div>
+        </div> -->
         </div>
         </header><!-- #masthead -->
 

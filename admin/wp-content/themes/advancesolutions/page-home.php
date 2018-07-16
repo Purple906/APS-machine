@@ -41,6 +41,7 @@ get_header();
 			<div class="swiper-button-prev"></div>
 			<div class="swiper-button-next"></div>
 		</div>
+		<hr class="parts-break">
 		<div class="services">
 		<h3 style="text-align: center;"><strong>Ser</strong>vices</h3>
 		<p><?php the_field('services_description'); ?></p>
