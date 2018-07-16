@@ -93,15 +93,10 @@ transition: 1s;
     }
 } 
 
-// .swiper-container-horizontal > .swiper-pagination-bullets > .swiper-pagination-bullet {
-//   margin: 0 5vw;
-// }
-.service-pagination {
-  /* top: 0;
-  position: absolute; */
+.service-pagination { 
   padding: 0;
   text-align: center;
-  /* z-index: 10; */
+  height: 7vw;
 }
 .service-pagination{
   .swiper-pagination-bullet {
