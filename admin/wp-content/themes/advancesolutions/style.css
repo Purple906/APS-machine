@@ -1364,7 +1364,7 @@ strong {
 }
 
 .about-us {
-	background-image: url(./assets/aps_industries.jpg);
+	background-image: url(./assets/aps_about.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -1379,7 +1379,7 @@ strong {
 	    justify-content: space-between;
 	-ms-flex-align: center;
 	    align-items: center;
-	width: 90%;
+	width: 80%;
 	margin: 4em auto 0;
 	padding: 4em 0;
 }
@@ -1468,6 +1468,11 @@ strong {
 	.service .words {
 		padding-right: 5vw;
 	}
+}
+
+.service:nth-child(3),
+.service:nth-child(4) {
+	margin-bottom: 0;
 }
 
 .team {
