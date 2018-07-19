@@ -1602,14 +1602,16 @@ strong {
 
 @media screen and (max-width: 813px) {
 	.cta-2,
-	.cta-3 {
+	.cta-3,
+	.cta-4 {
 		width: 30%;
 	}
 }
 
 @media screen and (max-width: 520px) {
 	.cta-2,
-	.cta-3 {
+	.cta-3,
+	.cta-4 {
 		width: 33%;
 	}
 }
@@ -2165,8 +2167,8 @@ html.lb-disable-scrolling {
 ## footer
 --------------------------------------------------------------*/
 .footer-content {
-	background-image: url(./assets/footer-line.png);
-	background-position: right;
+	background-image: url(./assets/footer-line-1.png);
+	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	display: -ms-flexbox;
@@ -2189,6 +2191,11 @@ html.lb-disable-scrolling {
 	    justify-content: space-between;
 	-ms-flex-align: center;
 	    align-items: center;
+}
+
+.site-footer .site-info img {
+	width: 15vw;
+	height: auto;
 }
 
 .site-footer .footer-navs {
@@ -2237,18 +2244,49 @@ html.lb-disable-scrolling {
 	color: #00cd00;
 }
 
+@media screen and (max-width: 974px) {
+	.site-footer .footer-navs .menu-foot-nav-container .menu,
+	.site-footer .footer-navs .menu-foot-nav-container .social-menu,
+	.site-footer .footer-navs .menu-social-media-container .menu,
+	.site-footer .footer-navs .menu-social-media-container .social-menu {
+		width: 80%;
+	}
+}
+
+@media screen and (max-width: 754px) {
+	.site-footer .footer-navs .menu-foot-nav-container .menu,
+	.site-footer .footer-navs .menu-foot-nav-container .social-menu,
+	.site-footer .footer-navs .menu-social-media-container .menu,
+	.site-footer .footer-navs .menu-social-media-container .social-menu {
+		width: 90%;
+	}
+}
+
 .site-footer .footer-navs .menu-social-media-container {
 	padding-top: 0;
 	margin-top: 1.25vw;
 }
 
 .site-footer .footer-navs .menu-social-media-container .social-menu {
-	width: 40%;
+	width: 20%;
 }
 
 .site-footer .footer-navs .menu-social-media-container .social-menu .social-img {
 	width: 2.5vw;
 	height: 2.5vw;
+}
+
+@media screen and (max-width: 974px) {
+	.site-footer .footer-navs .menu-social-media-container .social-menu {
+		width: 25%;
+		margin-top: 1vw;
+	}
+}
+
+@media screen and (max-width: 754px) {
+	.site-footer .footer-navs .menu-social-media-container .social-menu {
+		width: 30%;
+	}
 }
 
 .built-by {
