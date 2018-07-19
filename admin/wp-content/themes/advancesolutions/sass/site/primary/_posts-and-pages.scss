@@ -450,3 +450,39 @@ input[type="submit"]:hover {
         margin: 1vw;
     }
 }
+.post-thumbnail {
+    text-align: center;
+    margin: 3em auto 0;
+}
+
+.cat-links{
+    margin-left: 2vw;
+}
+
+.comments-area{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.service-page{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.what-we-do {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-bottom: 2em;
+}
+
+.machines,
+.asembly {
+    width: 40%;
+    ul {
+        margin: 0;
+        h5{
+            margin-bottom: 0;
+        }
+    }
+}
