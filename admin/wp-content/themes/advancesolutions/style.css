@@ -1535,24 +1535,27 @@ strong {
 
 .cta-1,
 .cta-2,
-.cta-3 {
+.cta-3,
+.cta-4 {
 	display: -ms-flexbox;
 	display: flex;
-	margin-bottom: 5vw;
+	margin-bottom: 2vw;
 }
 
 .cta-1 img,
 .cta-2 img,
-.cta-3 img {
+.cta-3 img,
+.cta-4 img {
 	margin-right: 1em;
-	width: 5vw;
-	height: 5vw;
+	width: 4vw;
+	height: 4vw;
 }
 
 @media screen and (max-width: 813px) {
 	.cta-1 img,
 	.cta-2 img,
-	.cta-3 img {
+	.cta-3 img,
+	.cta-4 img {
 		-ms-flex-pack: distribute;
 		    justify-content: space-around;
 		width: 5vw;
@@ -1564,7 +1567,8 @@ strong {
 @media screen and (max-width: 520px) {
 	.cta-1 img,
 	.cta-2 img,
-	.cta-3 img {
+	.cta-3 img,
+	.cta-4 img {
 		width: 12vw;
 		height: 12vw;
 		text-align: center;
@@ -1575,7 +1579,8 @@ strong {
 @media screen and (max-width: 520px) {
 	.cta-1,
 	.cta-2,
-	.cta-3 {
+	.cta-3,
+	.cta-4 {
 		-ms-flex-direction: column;
 		    flex-direction: column;
 		-ms-flex-align: center;

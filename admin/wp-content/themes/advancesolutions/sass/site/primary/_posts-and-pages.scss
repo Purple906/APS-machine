@@ -284,13 +284,14 @@ strong {
 
 .cta-1,
 .cta-2,
-.cta-3 {
+.cta-3,
+.cta-4 {
     display: flex;
-    margin-bottom: 5vw;
+    margin-bottom: 2vw;
     img {
         margin-right: 1em; 
-        width: 5vw;
-        height: 5vw;
+        width: 4vw;
+        height: 4vw;
         @media screen and (max-width: 813px){
             justify-content: space-around;
             width: 5vw;

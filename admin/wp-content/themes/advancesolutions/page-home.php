@@ -17,7 +17,7 @@ get_header();
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
-		<div class="products">
+		<div id="our-products" class="products">
 		<h3 style="text-align: center;"><strong>Our</strong> Products</h3>
 		<p><?php the_field('our_products'); ?></p>
 		</div>
@@ -42,7 +42,7 @@ get_header();
 			<div class="swiper-button-next"></div>
 		</div>
 		<hr class="parts-break">
-		<div class="services">
+		<div id="services" class="services">
 		<h3 style="text-align: center;"><strong>Ser</strong>vices</h3>
 		<p><?php the_field('services_description'); ?></p>
 		</div>
