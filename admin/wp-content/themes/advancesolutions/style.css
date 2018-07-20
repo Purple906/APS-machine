@@ -495,6 +495,7 @@ big {
 --------------------------------------------------------------*/
 html {
 	box-sizing: border-box;
+	overflow-x: hidden;
 }
 
 *,
@@ -507,6 +508,7 @@ html {
 body {
 	background: #fff;
 	/* Fallback for when there is no custom background color defined. */
+	overflow-x: hidden;
 }
 
 hr {
@@ -673,6 +675,7 @@ a:hover, a:active {
 ## Menus
 --------------------------------------------------------------*/
 .top-navigation {
+	position: relative;
 	display: -ms-flexbox;
 	display: flex;
 	-ms-flex-pack: justify;
@@ -696,9 +699,6 @@ a:hover, a:active {
 }
 
 .main-navigation {
-	clear: both;
-	/*margin-left: auto;
-    margin-right: 0;*/
 	float: right;
 	width: 90%;
 	padding-top: 2em;
@@ -774,59 +774,130 @@ a:hover, a:active {
 	}
 }
 
-/* Small menu. */
-.menu-toggle,
-.main-navigation.toggled ul {
+.menu {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+#menuToggle {
 	display: block;
-	float: right;
-	margin-top: 3vw;
-}
-
-.main-navigation.toggled ul {
-	display: -ms-flexbox;
-	display: flex;
-	-ms-flex-direction: column;
-	    flex-direction: column;
-	-ms-flex-align: end;
-	    align-items: flex-end;
-	background-color: #ebebeb;
-	width: auto;
-	margin-right: 0.15em;
-	box-shadow: 1px 2px 4px #000000;
 	position: absolute;
-	top: 8%;
-	left: 72vw;
-	z-index: 99999;
+	top: 50px;
+	right: 50px;
+	z-index: 1;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	 -ms-user-select: none;
+	     user-select: none;
 }
 
-.main-navigation.toggled ul li {
-	padding-right: 1em;
-}
-
-.main-navigation.toggled ul li a {
-	color: #000000;
-}
-
-.main-navigation.toggled ul .menu-item-1783 a {
-	padding-right: 0;
-}
-
-@media screen and (max-width: 750px) {
-	.main-navigation.toggled ul {
-		left: 70vw;
+@media screen and (max-width: 455px) {
+	#menuToggle {
+		top: 25px;
 	}
 }
 
-@media screen and (max-width: 573px) {
-	.main-navigation.toggled ul {
-		left: 65vw;
-	}
+#menuToggle input {
+	display: block;
+	width: 40px;
+	height: 32px;
+	position: absolute;
+	top: -7px;
+	left: -5px;
+	cursor: pointer;
+	opacity: 0;
+	/* hide this */
+	z-index: 2;
+	/* and place it over the hamburger */
+	-webkit-touch-callout: none;
 }
 
-@media screen and (max-width: 377px) {
-	.main-navigation.toggled ul li a {
-		font-size: 0.6em;
-	}
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span {
+	display: block;
+	width: 33px;
+	height: 4px;
+	margin-bottom: 5px;
+	position: relative;
+	background: #02CA12;
+	border-radius: 3px;
+	z-index: 1;
+	transform-origin: 4px 0px;
+	transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+}
+
+#menuToggle span:first-child {
+	transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2) {
+	transform-origin: 0% 100%;
+}
+
+/*
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span {
+	opacity: 1;
+	transform: rotate(45deg) translate(-2px, -1px);
+	background: #02CA12;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3) {
+	opacity: 0;
+	transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2) {
+	opacity: 1;
+	transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu {
+	position: absolute;
+	width: 360px;
+	margin: -100px -60px 0 0;
+	padding: 50px;
+	padding-top: 125px;
+	right: -100px;
+	background: #232323;
+	list-style-type: none;
+	-webkit-font-smoothing: antialiased;
+	/* to stop flickering of text in safari */
+	transform-origin: 0% 0%;
+	transform: translate(100%, 0);
+	transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+}
+
+#menu li {
+	padding: 10px 0;
+}
+
+#menu li a {
+	text-decoration: none;
+	color: #fff;
+}
+
+/*
+ * And let's fade it in from the left
+ */
+#menuToggle input:checked ~ ul {
+	transform: scale(1, 1);
+	opacity: 1;
 }
 
 .menu-item-1783 {
@@ -839,8 +910,17 @@ a:hover, a:active {
 	padding-right: 1em;
 }
 
+@media screen and (max-width: 455px) {
+	.menu-item-1783 {
+		background-color: transparent;
+	}
+	.menu-item-1783 a {
+		padding-left: 0;
+	}
+}
+
 @media screen and (min-width: 1080px) {
-	.menu-toggle {
+	#menuToggle {
 		display: none;
 	}
 	.main-navigation ul {
@@ -851,6 +931,7 @@ a:hover, a:active {
 	}
 }
 
+/* Small menu. */
 .comment-navigation,
 .posts-navigation,
 .post-navigation,
@@ -1071,7 +1152,6 @@ a:hover, a:active {
 	background-size: cover;
 	width: 100%;
 	height: auto;
-	overflow: hidden;
 }
 
 .header-info {
@@ -1127,53 +1207,6 @@ a:hover, a:active {
 @media screen and (max-width: 460px) {
 	.header-info .site-description {
 		font-size: 3vw;
-	}
-}
-
-.header-info .header-btns {
-	display: -ms-flexbox;
-	display: flex;
-	-ms-flex-pack: distribute;
-	    justify-content: space-around;
-	margin: 2em auto 0;
-}
-
-.header-info .header-btns .header-btn {
-	color: #ffffff;
-	font-size: 1.5vw;
-	text-decoration: none;
-	padding: 0.5em 1em;
-	background-color: #000000;
-}
-
-@media screen and (max-width: 460px) {
-	.header-info .header-btns .header-btn {
-		font-size: 3vw;
-	}
-}
-
-.header-info .header-btns .header-btn:hover {
-	background-color: #00cd00;
-}
-
-@media screen and (max-width: 590px) {
-	.header-info .header-btns {
-		margin: 0;
-	}
-}
-
-.header-info .header-photos {
-	width: 100%;
-	text-align: center;
-}
-
-.header-info .header-photos img {
-	width: 14vw;
-}
-
-@media screen and (max-width: 460px) {
-	.header-info .header-photos {
-		display: none;
 	}
 }
 

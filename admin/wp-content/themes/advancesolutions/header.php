@@ -25,19 +25,35 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'advancesolutions' ); ?></a>
 
 	<header id="masthead" class="site-header">
-            <div class="top-navigation">
-            <?php the_custom_logo(); ?>
-            <nav id="site-navigation" class="main-navigation">
-            <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Menu', 'advancesolutions' ); ?></button>
+    <div class="top-navigation">
+        <?php the_custom_logo(); ?>
+        <nav id="site-navigation" class="main-navigation">
             <?php
             wp_nav_menu( array(
                 'theme_location' => 'menu-1',
                 'menu_id'        => 'primary-menu',
             ) );
             ?>
-            </nav><!-- #site-navigation -->
+            <!-- <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Menu', 'advancesolutions' ); ?></button> -->
+        </nav><!-- #site-navigation -->
+        <div id="menuToggle" aria-controls="primary-menu">
+            <!--A fake / hidden checkbox is used as click reciever, so you can use the :checked selector on it.-->
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <!--Too bad the menu has to be inside of the button but hey, it's pure CSS magic.-->
+            <ul id="menu">
+                <?php
+                    wp_nav_menu( array(
+                        'theme_location' => 'menu-1',
+                        'menu_id'        => 'primary-menu',
+                    ) );
+                ?>
+            </ul>
+        </div>
             
-            </div>
+    </div>
             <div class="header-info">
             <div class="site-branding">
             <?php
@@ -55,10 +71,6 @@
                 ?>
                 <p class="site-description"><?php echo $advancesolutions_description; /* WPCS: xss ok. */ ?></p>
             <?php endif; ?>
-            <!-- <div class="header-btns">
-            <a class="header-btn" href="#">Our Products</a>
-            <a class="header-btn" href="#">News</a>
-            </div> -->
         </div><!-- .site-branding -->
         <!-- <div class="header-photos">
             <img src="<?php echo get_template_directory_uri();?>/assets/part_1.png">
