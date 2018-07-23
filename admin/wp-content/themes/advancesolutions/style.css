@@ -1147,7 +1147,7 @@ a:hover, a:active {
 --------------------------------------------------------------*/
 .site-header {
 	background-image: url(./assets/Hero-image.png);
-	background-position: center;
+	background-position: right 50% bottom 50%;
 	background-repeat: no-repeat;
 	background-size: cover;
 	width: 100%;
@@ -1155,59 +1155,23 @@ a:hover, a:active {
 }
 
 .header-info {
+	width: 90%;
+	margin: 2em auto;
+	-ms-flex-align: center;
+	    align-items: center;
+	margin-top: 10vw;
+}
+
+.header-info .header-products {
+	list-style: none;
 	display: -ms-flexbox;
 	display: flex;
 	-ms-flex-pack: justify;
 	    justify-content: space-between;
-	width: 80%;
-	margin: 2em auto;
-	-ms-flex-align: center;
-	    align-items: center;
-}
-
-.header-info .site-branding {
-	/*   padding: 0 5em 0 0;
-        margin: 0 0 0 10%;*/
-}
-
-.header-info .site-branding .site-title {
+	-ms-flex-align: end;
+	    align-items: flex-end;
+	padding: 0;
 	margin: 0;
-}
-
-.header-info .site-branding .site-title a {
-	font-size: 5vw;
-	color: #ffffff;
-	text-decoration: none;
-}
-
-@media screen and (max-width: 605px) {
-	.header-info .site-branding .site-title a {
-		font-size: 5vw;
-	}
-}
-
-@media screen and (max-width: 605px) and (max-width: 460px) {
-	.header-info .site-branding .site-title a {
-		font-size: 6vw;
-	}
-}
-
-.header-info .site-description {
-	color: #ffffff;
-	font-size: 1.5vw;
-	text-transform: uppercase;
-}
-
-@media screen and (max-width: 605px) {
-	.header-info .site-description {
-		font-size: 1.5vw;
-	}
-}
-
-@media screen and (max-width: 460px) {
-	.header-info .site-description {
-		font-size: 3vw;
-	}
 }
 
 @media screen and (max-width: 525px) {
@@ -2218,7 +2182,10 @@ html.lb-disable-scrolling {
 }
 
 .site-footer {
-	background-color: #000000;
+	background-image: url(./assets/Footer.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .site-footer .site-info {

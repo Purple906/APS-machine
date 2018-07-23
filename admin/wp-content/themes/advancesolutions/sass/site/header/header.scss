@@ -1,60 +1,38 @@
 .site-header {
     background-image: url(./assets/Hero-image.png);
-    background-position: center;
+    background-position: right 50% bottom 50%;;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
     height: auto;
-    // overflow-x: hidden;
 }
 
 .header-info {
-    display: flex;
-    justify-content: space-between;
-    width: 80%;
+    // display: flex;
+    // justify-content: space-between;
+    width: 90%;
     margin: 2em auto;
-    align-items: center;
-
-    .site-branding {
-     /*   padding: 0 5em 0 0;
-        margin: 0 0 0 10%;*/
-        .site-title {
-            margin: 0;
-            a{
-                font-size: 5vw;
-                color: #ffffff;
-                text-decoration: none;
-                @media screen and (max-width: 605px){
-                    font-size: 5vw;
-                @media screen and (max-width: 460px){
-                    font-size: 6vw;
-                }
-                }
-            }
-        }
+    align-items: center; 
+    margin-top: 10vw;
+    .header-products{
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding: 0;
+        margin: 0;
     }
 
-    .site-description {
-        color: #ffffff;
-        font-size: 1.5vw;
-        text-transform: uppercase;
+    // .site-description {
+    //     color: #ffffff;
+    //     font-size: 1.5vw;
+    //     text-transform: uppercase;
 
-        @media screen and (max-width: 605px){
-            font-size: 1.5vw;
-        }
-        @media screen and (max-width: 460px){
-            font-size: 3vw;
-        }
-    }
-
-    // .header-photos {
-    //     width: 100%;
-    //     text-align: center;
-    //     img {
-    //         width: 14vw;
+    //     @media screen and (max-width: 605px){
+    //         font-size: 1.5vw;
     //     }
     //     @media screen and (max-width: 460px){
-    //         display: none;
+    //         font-size: 3vw;
     //     }
     // }
     @media screen and (max-width: 525px){

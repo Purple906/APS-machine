@@ -55,7 +55,20 @@
             
     </div>
             <div class="header-info">
-            <div class="site-branding">
+            <?php 
+                $images = get_field('header_gallery');
+                $size = 'medium'; // (thumbnail, medium, large, full or custom size)
+
+                if( $images ): ?>
+                <ul class="header-products">
+                <?php foreach( $images as $image ): ?>
+                    <li class="head-product">
+            	        <?php echo wp_get_attachment_image( $image['ID'], $size ); ?>
+                    </li>
+                <?php endforeach; ?>
+                </ul>
+            <?php endif; ?>
+            <!-- <div class="site-branding">
             <?php
             if ( is_front_page() && is_home() ) :
                 ?>
@@ -71,13 +84,8 @@
                 ?>
                 <p class="site-description"><?php echo $advancesolutions_description; /* WPCS: xss ok. */ ?></p>
             <?php endif; ?>
-        </div><!-- .site-branding -->
-        <!-- <div class="header-photos">
-            <img src="<?php echo get_template_directory_uri();?>/assets/part_1.png">
-            <img src="<?php echo get_template_directory_uri();?>/assets/part_2.png">
-            <img src="<?php echo get_template_directory_uri();?>/assets/part_2.png">
-            <img src="<?php echo get_template_directory_uri();?>/assets/part_4.png">
-        </div> -->
+        </div>.site-branding -->
+        
         </div>
         </header><!-- #masthead -->
 
