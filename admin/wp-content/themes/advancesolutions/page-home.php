@@ -56,7 +56,7 @@ get_header();
 				<?php 
 					$link = get_field('machine_link');
 					if( $link ): ?>
-						<a class="button" href="<?php echo $link; ?>">Continue Reading</a><?php endif; ?>
+						<a class="button" href="<?php echo $link; ?>">Learn More</a><?php endif; ?>
 			</div>
 			<div class="swiper-slide service-slide">
 				<h3><?php the_field('assembly_title'); ?></h3>
@@ -64,7 +64,7 @@ get_header();
 				<?php 
 					$link = get_field('assembly_link');
 					if( $link ): ?>
-						<a class="button" href="<?php echo $link; ?>">Continue Reading</a><?php endif; ?>
+						<a class="button" href="<?php echo $link; ?>">Learn More</a><?php endif; ?>
 			</div>
 			<div class="swiper-slide service-slide">
 				<h3><?php the_field('3d_printing_title'); ?></h3>
@@ -72,7 +72,7 @@ get_header();
 				<?php 
 					$link = get_field('3d_printing_link');
 					if( $link ): ?>
-						<a class="button" href="<?php echo $link; ?>">Continue Reading</a><?php endif; ?>
+						<a class="button" href="<?php echo $link; ?>">Learn More</a><?php endif; ?>
 			</div>
 			</div>
 		</div>

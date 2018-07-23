@@ -16,14 +16,12 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
-
 	<?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'advancesolutions' ); ?></a>
-
 	<header id="masthead" class="site-header">
     <div class="top-navigation">
         <?php the_custom_logo(); ?>
@@ -51,10 +49,10 @@
                     ) );
                 ?>
             </ul>
-        </div>
-            
+        </div>     
     </div>
-            <div class="header-info">
+
+    <div class="header-info">
             <?php 
                 $images = get_field('header_gallery');
                 $size = 'medium'; // (thumbnail, medium, large, full or custom size)
@@ -68,6 +66,8 @@
                 <?php endforeach; ?>
                 </ul>
             <?php endif; ?>
+
+
             <!-- <div class="site-branding">
             <?php
             if ( is_front_page() && is_home() ) :
@@ -85,8 +85,8 @@
                 <p class="site-description"><?php echo $advancesolutions_description; /* WPCS: xss ok. */ ?></p>
             <?php endif; ?>
         </div>.site-branding -->
-        </div>
-        </header><!-- #masthead -->
+    </div>
+    </header><!-- #masthead -->
 
 
 
