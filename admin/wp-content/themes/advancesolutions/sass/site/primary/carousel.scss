@@ -97,6 +97,10 @@ transition: 1s;
   padding: 0;
   text-align: center;
   height: 7vw;
+
+  @media screen and (max-width: 972px){
+    margin-bottom: 2em;
+  }
 }
 .service-pagination{
   .swiper-pagination-bullet {

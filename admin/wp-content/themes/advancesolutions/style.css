@@ -2133,6 +2133,12 @@ html.lb-disable-scrolling {
 	height: 7vw;
 }
 
+@media screen and (max-width: 972px) {
+	.service-pagination {
+		margin-bottom: 2em;
+	}
+}
+
 .service-pagination .swiper-pagination-bullet {
 	width: auto;
 	height: auto;

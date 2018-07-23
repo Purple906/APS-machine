@@ -85,7 +85,6 @@
                 <p class="site-description"><?php echo $advancesolutions_description; /* WPCS: xss ok. */ ?></p>
             <?php endif; ?>
         </div>.site-branding -->
-        
         </div>
         </header><!-- #masthead -->
 
