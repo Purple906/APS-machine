@@ -68,7 +68,7 @@
             <?php endif; ?>
 
 
-            <!-- <div class="site-branding">
+            <div class="site-branding">
             <?php
             if ( is_front_page() && is_home() ) :
                 ?>
@@ -84,7 +84,7 @@
                 ?>
                 <p class="site-description"><?php echo $advancesolutions_description; /* WPCS: xss ok. */ ?></p>
             <?php endif; ?>
-        </div>.site-branding -->
+        </div><!--.site-branding -->
     </div>
     </header><!-- #masthead -->
 
