@@ -112,9 +112,16 @@
   z-index: 1;
   -webkit-user-select: none;
   user-select: none;
-  @media screen and (max-width: 455px){
+  @media screen and (max-width: 845px){
 	  top: 25px;
   }
+  @media screen and (max-width: 600px){
+    top: 10px;
+    right: 10px;
+}
+@media screen and (max-width: 400px){
+    top: 5px;
+}
 }
 
 #menuToggle input {

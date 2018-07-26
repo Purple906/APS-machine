@@ -792,9 +792,22 @@ a:hover, a:active {
 	     user-select: none;
 }
 
-@media screen and (max-width: 455px) {
+@media screen and (max-width: 845px) {
 	#menuToggle {
 		top: 25px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	#menuToggle {
+		top: 10px;
+		right: 10px;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	#menuToggle {
+		top: 5px;
 	}
 }
 
@@ -1178,12 +1191,13 @@ a:hover, a:active {
 @media screen and (max-width: 525px) {
 	.header-info {
 		width: 90%;
+		margin-bottom: 0;
 	}
 }
 
 @media screen and (max-width: 460px) {
 	.header-info {
-		margin-top: 0;
+		margin-top: 3em;
 	}
 }
 
@@ -2131,7 +2145,7 @@ html.lb-disable-scrolling {
 .service-pagination {
 	padding: 0;
 	text-align: center;
-	height: 7vw;
+	height: 8vw;
 }
 
 @media screen and (max-width: 972px) {
@@ -2141,17 +2155,24 @@ html.lb-disable-scrolling {
 }
 
 .service-pagination .swiper-pagination-bullet {
-	width: auto;
+	width: 20vw;
 	height: auto;
 	padding: 1em 0.5em;
 	border-radius: 0;
 	text-align: center;
-	line-height: 20px;
-	font-size: 20px;
+	line-height: 2vw;
+	font-size: 2vw;
 	color: #fff;
 	opacity: 1;
 	background: #000;
 	text-transform: uppercase;
+}
+
+@media screen and (max-width: 430px) {
+	.service-pagination .swiper-pagination-bullet {
+		font-size: 4vw;
+		width: 30vw;
+	}
 }
 
 .service-pagination .swiper-pagination-bullet-active {
@@ -2172,20 +2193,45 @@ html.lb-disable-scrolling {
 	height: 3em;
 }
 
+@media screen and (max-width: 700px) {
+	.service-pagination .swiper-pagination-bullet-active::after {
+		width: 5em;
+	}
+}
+
+@media screen and (max-width: 430px) {
+	.service-pagination .swiper-pagination-bullet-active::after {
+		width: 8em;
+	}
+}
+
 /*--------------------------------------------------------------
 ## footer
 --------------------------------------------------------------*/
 .footer-content {
-	background-image: url(./assets/footer-line-1.png);
+	background-image: url(./assets/footer-line.png);
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: contain;
 	display: -ms-flexbox;
 	display: flex;
 	-ms-flex-pack: distribute;
 	    justify-content: space-around;
 	width: 80%;
 	margin: 2em auto;
+}
+
+@media screen and (max-width: 710px) {
+	.footer-content {
+		background-image: none;
+		margin-bottom: 0;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.footer-content {
+		width: 90%;
+	}
 }
 
 .site-footer {
@@ -2208,6 +2254,17 @@ html.lb-disable-scrolling {
 .site-footer .site-info img {
 	width: 15vw;
 	height: auto;
+}
+
+@media screen and (max-width: 710px) {
+	.site-footer .site-info {
+		-ms-flex-direction: column;
+		    flex-direction: column;
+		margin-top: 0;
+	}
+	.site-footer .site-info img {
+		width: 25vw;
+	}
 }
 
 .site-footer .footer-navs {
@@ -2274,6 +2331,17 @@ html.lb-disable-scrolling {
 	}
 }
 
+@media screen and (max-width: 710px) {
+	.site-footer .footer-navs .menu-foot-nav-container .menu,
+	.site-footer .footer-navs .menu-foot-nav-container .social-menu,
+	.site-footer .footer-navs .menu-social-media-container .menu,
+	.site-footer .footer-navs .menu-social-media-container .social-menu {
+		margin: 0;
+		width: 100%;
+		padding-bottom: 1em;
+	}
+}
+
 .site-footer .footer-navs .menu-social-media-container {
 	padding-top: 0;
 	margin-top: 1.25vw;
@@ -2297,7 +2365,17 @@ html.lb-disable-scrolling {
 
 @media screen and (max-width: 754px) {
 	.site-footer .footer-navs .menu-social-media-container .social-menu {
-		width: 30%;
+		display: -ms-flexbox;
+		display: flex;
+		margin: 0 auto;
+		padding: 0;
+	}
+}
+
+@media screen and (max-width: 710px) {
+	.site-footer .footer-navs .menu-social-media-container .social-menu .social-img {
+		width: 5vw;
+		height: 5vw;
 	}
 }
 
@@ -2319,46 +2397,9 @@ html.lb-disable-scrolling {
 	color: #00cd00;
 }
 
-@media screen and (max-width: 705px) {
-	.site-footer .site-info {
-		margin-top: 3.75vw;
-	}
-	.menu-foot-nav-container .menu {
-		width: 90%;
-	}
-	.menu-social-media-container .menu {
-		width: 30%;
-	}
-	.menu-social-media-container .menu .social-img {
-		width: 3.5vw;
-		height: 3.5vw;
-	}
-}
-
-@media screen and (max-width: 525px) {
-	.footer-content {
-		display: block;
-		width: 90%;
-	}
-}
-
-@media screen and (max-width: 375px) {
-	.menu-foot-nav-container .menu {
-		width: 98%;
-		-ms-flex-pack: justify;
-		    justify-content: space-between;
-		margin: 0.5em auto;
-		padding-left: 0;
-	}
-	.menu-social-media-container .menu {
-		width: 40%;
-	}
-	.menu-social-media-container .menu .social-img {
-		width: 5.5vw;
-		height: 5.5vw;
-	}
+@media screen and (max-width: 710px) {
 	.built-by {
-		width: 60%;
+		margin: 2em auto;
 	}
 }
 
