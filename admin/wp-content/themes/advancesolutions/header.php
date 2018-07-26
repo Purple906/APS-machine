@@ -21,7 +21,8 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'advancesolutions' ); ?></a>
+    <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'advancesolutions' ); ?></a>
+    
 	<header id="masthead" class="site-header">
     <div class="top-navigation">
         <?php the_custom_logo(); ?>
@@ -53,8 +54,9 @@
     </div>
 
     <div class="header-info">
+
             <?php 
-                $images = get_field('header_gallery');
+                $images = get_field('head_images', 'option');
                 $size = 'medium'; // (thumbnail, medium, large, full or custom size)
 
                 if( $images ): ?>
@@ -66,9 +68,10 @@
                 <?php endforeach; ?>
                 </ul>
             <?php endif; ?>
-
-
-            <div class="site-branding">
+        
+        
+        
+            <!-- <div class="site-branding">
             <?php
             if ( is_front_page() && is_home() ) :
                 ?>
@@ -84,8 +87,8 @@
                 ?>
                 <p class="site-description"><?php echo $advancesolutions_description; /* WPCS: xss ok. */ ?></p>
             <?php endif; ?>
-        </div><!--.site-branding -->
-    </div>
+        </div>.site-branding -->
+    </div><!--.header-info -->
     </header><!-- #masthead -->
 
 

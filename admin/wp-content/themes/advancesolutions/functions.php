@@ -1,7 +1,5 @@
 <?php
 
-include 'inc/posttypes.php';
-
 /**
  * Advancesolutions functions and definitions
  *
@@ -9,6 +7,12 @@ include 'inc/posttypes.php';
  *
  * @package Advancesolutions
  */
+
+if( function_exists('acf_add_options_page') ) {
+	
+	acf_add_options_page();
+	
+}
 
 if ( ! function_exists( 'advancesolutions_setup' ) ) :
 	/**
