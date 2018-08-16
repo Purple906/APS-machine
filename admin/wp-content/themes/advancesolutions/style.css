@@ -1397,7 +1397,7 @@ strong {
 }
 
 .about-us .about-us-content .about-us-info {
-	width: 40%;
+	width: 30%;
 	padding-right: 1em;
 }
 
@@ -1421,7 +1421,7 @@ strong {
 .about-us-services {
 	display: -ms-flexbox;
 	display: flex;
-	width: 60%;
+	width: 70%;
 	-ms-flex-wrap: wrap;
 	    flex-wrap: wrap;
 }
@@ -1715,8 +1715,8 @@ input[type="submit"]:hover {
 .staff {
 	display: -ms-flexbox;
 	display: flex;
-	-ms-flex-align: center;
-	    align-items: center;
+	-ms-flex-align: start;
+	    align-items: flex-start;
 	-ms-flex-pack: distribute;
 	    justify-content: space-around;
 	width: 80%;

@@ -167,7 +167,7 @@ strong {
     margin: 4em auto 0;
     padding: 4em 0;
         .about-us-info {
-            width: 40%;
+            width: 30%;
             padding-right: 1em;
             h3 {
                 margin: 0;
@@ -187,7 +187,7 @@ strong {
 
 .about-us-services {
     display: flex;
-    width: 60%;
+    width: 70%;
     flex-wrap: wrap;
     div {
         h6 {
@@ -410,7 +410,7 @@ input[type="submit"]:hover {
 
 .staff {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-around;
     width: 80%;
     margin: 0 auto;
