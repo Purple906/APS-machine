@@ -1332,9 +1332,7 @@ strong {
 }
 
 .pt-cv-ifield {
-	/*border: solid 1px black;*/
 	box-shadow: 1px 2px 4px #000000;
-	/*width: 80%;*/
 }
 
 .pt-cv-wrapper img {
@@ -2077,7 +2075,6 @@ html.lb-disable-scrolling {
 	width: 60%;
 	height: auto;
 	max-height: 250px;
-	/* border: 1px solid black; */
 	-webkit-filter: grayscale(100%);
 	        filter: grayscale(100%);
 	transition: 1s;
@@ -2108,14 +2105,12 @@ html.lb-disable-scrolling {
 	font-size: 18px;
 	height: auto;
 	background: #fff;
-	/* Center slide text vertically */
 	display: -ms-flexbox;
 	display: flex;
 	-ms-flex-pack: center;
 	justify-content: center;
 	-ms-flex-align: center;
 	align-items: center;
-	/* adjusting the content in the slide */
 	display: flex;
 	-ms-flex-direction: column;
 	    flex-direction: column;

@@ -49,7 +49,6 @@ strong {
     width: 80%;
     margin: 2em auto;
     text-align: center;
-    // font-size: 0.9em;
     h3 {
         padding: 0;
         margin-bottom: 0;
@@ -108,9 +107,7 @@ strong {
 }
 
 .pt-cv-ifield {
-    /*border: solid 1px black;*/
     box-shadow: 1px 2px 4px #000000;
-    /*width: 80%;*/
 }
 
 .pt-cv-wrapper{
@@ -249,13 +246,8 @@ strong {
 .contact-us {
     width: 80%;
     margin: 0 auto;
-    // display: grid;
-    // grid-template-columns: 33.33% 33.33% 33.33%;
-    // grid-template-rows: 3em 6em 6em 6em;
     h3 {
-        margin-bottom: 2vw;
-        // grid-column: 1/3;
-        // grid-row:1; 
+        margin-bottom: 2vw; 
     }
     @media screen and (max-width: 520px){
         width: 90%;
@@ -353,13 +345,8 @@ strong {
     }
 
 }
-// .wpcf7 {
-//     width: 40vw;
-// }
 
 .wpcf7-form {
-    // grid-column: 2;
-    // grid-row: 2/5;
     p {
         margin: 0;
         padding-bottom: 0.5em;
@@ -396,8 +383,6 @@ input[type="submit"]:hover {
     border: none;
 }
 .map { 
-    // grid-column: 3;
-    // grid-row: 1/5;
     margin: 0 0 0 2em ;
     height: 22vw;
     width: 40vw;
