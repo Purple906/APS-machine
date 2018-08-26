@@ -66,14 +66,14 @@ get_header();
 					if( $link ): ?>
 						<a class="button" href="<?php echo $link; ?>">Learn More</a><?php endif; ?>
 			</div>
-			<div class="swiper-slide service-slide">
+			<!-- <div class="swiper-slide service-slide">
 				<h3><?php the_field('3d_printing_title'); ?></h3>
 				<p><?php the_field('3d_printing_description'); ?></p>
 				<?php 
 					$link = get_field('3d_printing_link');
 					if( $link ): ?>
 						<a class="button" href="<?php echo $link; ?>">Learn More</a><?php endif; ?>
-			</div>
+			</div> -->
 			</div>
 		</div>
 		<?php
